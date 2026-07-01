@@ -22,7 +22,8 @@ claude-web-dev-kit/
 │   │   ├── skills/component-scaffolder/SKILL.md
 │   │   ├── skills/accessibility-review/SKILL.md
 │   │   ├── skills/react-best-practices/SKILL.md
-│   │   └── agents/frontend-reviewer.md
+│   │   ├── agents/frontend-reviewer.md
+│   │   └── agents/frontend-developer.md
 │   └── web-backend/
 │       ├── .claude-plugin/plugin.json
 │       ├── skills/api-scaffolder/SKILL.md
@@ -58,9 +59,10 @@ After editing any hooks, agents, or `.mcp.json` in a running session, run `/relo
 
 None of the `plugin.json` files pin a `version` field yet — while iterating, the marketplace resolves each plugin's version from the current git commit SHA. Add a `version` field once the plugins stabilize.
 
-## Third-party skills
+## Third-party components
 
 - `web-frontend/skills/react-best-practices` is imported from [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates/tree/main/cli-tool/components/skills/web-development/react-best-practices) (MIT-licensed, originally authored by Vercel Engineering). It's carried over unmodified — check upstream for updates rather than editing it in place.
+- `web-frontend/agents/frontend-developer` is adapted from [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates/blob/main/cli-tool/components/agents/development-team/frontend-developer.md) (same source repo). Unlike the skill above, this one is *not* verbatim: the upstream version is part of a larger multi-agent "development-team" framework, so the `context-manager` handshake protocol and the "Integration with Other Agents" section (referencing `ui-designer`, `qa-expert`, `security-auditor`, etc. — none of which exist in this marketplace) were stripped, `model: sonnet` was added, and it was trimmed to a standalone agent consistent with this repo's conventions. The framework/tooling/testing/accessibility expertise content is otherwise unchanged.
 
 ## Extending
 
