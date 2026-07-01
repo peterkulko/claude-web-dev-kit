@@ -21,6 +21,7 @@ claude-web-dev-kit/
 │   │   ├── .claude-plugin/plugin.json
 │   │   ├── skills/component-scaffolder/SKILL.md
 │   │   ├── skills/accessibility-review/SKILL.md
+│   │   ├── skills/react-best-practices/SKILL.md
 │   │   └── agents/frontend-reviewer.md
 │   └── web-backend/
 │       ├── .claude-plugin/plugin.json
@@ -56,6 +57,10 @@ After editing any hooks, agents, or `.mcp.json` in a running session, run `/relo
 ## Versioning
 
 None of the `plugin.json` files pin a `version` field yet — while iterating, the marketplace resolves each plugin's version from the current git commit SHA. Add a `version` field once the plugins stabilize.
+
+## Third-party skills
+
+- `web-frontend/skills/react-best-practices` is imported from [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates/tree/main/cli-tool/components/skills/web-development/react-best-practices) (MIT-licensed, originally authored by Vercel Engineering). It's carried over unmodified — check upstream for updates rather than editing it in place.
 
 ## Extending
 
