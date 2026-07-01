@@ -1,0 +1,25 @@
+{
+  "name": "claude-web-dev-kit",
+  "owner": {
+    "name": "Peter Kulko",
+    "email": "petrokulko@gmail.com"
+  },
+  "description": "A marketplace of Claude Code plugins for web development.",
+  "plugins": [
+    {
+      "name": "core",
+      "source": "./plugins/core",
+      "description": "Shared skills and agents used as a base for the other plugins."
+    },
+    {
+      "name": "web-frontend",
+      "source": "./plugins/web-frontend",
+      "description": "Frontend skills and an agents."
+    },
+    {
+      "name": "web-backend",
+      "source": "./plugins/web-backend",
+      "description": "Backend skills and an agents."
+    }
+  ]
+}

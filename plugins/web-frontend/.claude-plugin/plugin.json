@@ -1,0 +1,12 @@
+{
+  "name": "web-frontend",
+  "displayName": "Web Frontend",
+  "description": "Frontend skills and agents.",
+  "author": {
+    "name": "Peter Kulko",
+    "email": "petrokulko@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": ["web", "frontend", "react", "css", "accessibility"],
+  "dependencies": ["core"]
+}

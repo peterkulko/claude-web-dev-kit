@@ -1,0 +1,20 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Node (in case skills/scripts pull in tooling)
+node_modules/
+npm-debug.log*
+
+# Local Claude Code state (never distribute local plugin/session state)
+.claude/
+.claude-plugin/marketplace.local.json
+
+# Env / secrets
+.env
+.env.*

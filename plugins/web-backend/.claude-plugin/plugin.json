@@ -1,0 +1,12 @@
+{
+  "name": "web-backend",
+  "displayName": "Web Backend",
+  "description": "Backend skills and agents.",
+  "author": {
+    "name": "Peter Kulko",
+    "email": "petrokulko@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": ["web", "backend", "api", "database", "schema"],
+  "dependencies": ["core"]
+}
