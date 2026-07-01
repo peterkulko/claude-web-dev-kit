@@ -1,11 +1,11 @@
 {
   "name": "core",
   "displayName": "Core",
-  "description": "Shared code-review skill and agent used as a base for the web-frontend and web-backend plugins.",
+  "description": "Shared code-review skill, Docker expertise, and agent used as a base for the web-frontend and web-backend plugins.",
   "author": {
     "name": "Peter Kulko",
     "email": "petrokulko@gmail.com"
   },
   "license": "MIT",
-  "keywords": ["code-review", "core", "shared"]
+  "keywords": ["code-review", "core", "shared", "docker"]
 }
